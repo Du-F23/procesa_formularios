@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares mágicos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Viajes experienciales</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Catálogos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="categorias.html"><i class="bi-ui-checks"></i> Categorías</a></li>
+                            <li><a class="dropdown-item" href="lugares_magicos.html"><i class="bi-binoculars-fill"></i> Lugares mágicos</a></li>
+                            <li><a class="dropdown-item" href="viajes_experienciales.html"><i class="bi-cloud-moon"></i> Viajes experienciales</a></li>
+                            <li><a class="dropdown-item" href="usuarios.html"><i class="bi-person-circle"></i> Usuarios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header"><i class="bi-binoculars-fill"></i> Lugares mágicos</h5>
+            <div class="card-body">
+                <table class="table table-striped table-hover table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Estado</th>
+                            <th style="width: 20%;">Municipio</th>
+                            <th style="width: 50%;">Lugar mágico</th>
+                            <th style="width: 10%;">
+                                <a href="lugares_magicos_crear.php" class="btn btn-primary btn-sm">
+                                    <i class="bi-plus-circle-fill"></i> crear
+                                </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Estado de México</td>
+                            <td>El Oro</td>
+                            <td>El Oro</td>
+                            <td>
+                                <a href="lugares-magicos-editar.html" class="btn btn-primary btn-sm">
+                                    <i class="bi-pencil-square"></i>
+                                </a>
+                                <a href="lugares-magicos-borrar.html" class="btn btn-danger btn-sm">
+                                    <i class="bi-trash-fill"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chiapas</td>
+                            <td>San Cristobal de las Casas</td>
+                            <td>Cascadas de agua azul</td>
+                            <td>
+                                <a href="lugares-magicos-editar.html" class="btn btn-primary btn-sm">
+                                    <i class="bi-pencil-square"></i>
+                                </a>
+                                <a href="lugares-magicos-borrar.html" class="btn btn-danger btn-sm">
+                                    <i class="bi-trash-fill"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

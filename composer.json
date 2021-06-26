@@ -1,0 +1,18 @@
+{
+    "name": "duarte/dsm33",
+    "description": "Conexion a db viajes experimenciales",
+    "autoload": {
+        "psr-4": {
+            "Duarte\\Dsm33\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "2021 DSM33 Duarte V Fernando",
+            "email": "al222010329@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
